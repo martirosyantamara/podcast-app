@@ -59,7 +59,6 @@ function authFormHandler(event) {
 }
 
 function renderModalAfterAuth(content) {
-  console.log('dssd', content);
   if (typeof content === 'string') {
     createModal('Error', content);
   } else {

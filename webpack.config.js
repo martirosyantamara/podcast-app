@@ -24,3 +24,5 @@ module.exports = {
     }]
   }
 }
+
+export const API_KEY = 'AIzaSyChlTpKYM1CQtrJlvzYWl3jzTLvWM0DDR4';

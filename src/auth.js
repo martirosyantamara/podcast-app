@@ -1,3 +1,5 @@
+import { API_KEY } from "../webpack.config"
+
 export function getAuthForm() {
   return `
   <form class="mui-form" id="auth-form">
@@ -20,7 +22,6 @@ export function getAuthForm() {
 };
 
 export function authWithEmailAndPassword(email, password) {
-  const API_KEY = 'AIzaSyChlTpKYM1CQtrJlvzYWl3jzTLvWM0DDR4';
   return fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${API_KEY}`, {
     method: 'POST',
     body: JSON.stringify({
